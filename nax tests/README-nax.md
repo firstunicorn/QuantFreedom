@@ -19,7 +19,6 @@ sys.path
 5) Background color in Plotly Dash changing in tests\assets\custom.css
 
 6) Setup VENV:
-
 python -m venv qfFree
 then:
 qfFree\Scripts\activate
@@ -37,3 +36,5 @@ pip install TA_Lib-0.4.24-cp310-cp310-win_amd64.whl
 where instead of TA_Lib-0.4.24-cp310-cp310-win_amd64.whl - YOUR NAME OF DOWNLOADED FILE
 
 8) Use format  '/YOUR_FOLDER_NAME_OF_VENV/QuantFreedom/tests/data/30min.csv' for CSV file
+
+9) To make sync all changes and push it to Github, 
