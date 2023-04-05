@@ -38,10 +38,18 @@ before we create the virtual env you have to make sure you are using the cmd pro
 
 if you are in the cmd prompt then make sure the folder location for the cmd prompt is the coding folder ... if it isn't use cd and type in the location of the coding folder like cd "C:\users\my stuff\coding" ... make sure you use quotes because if you have spaces in some of your folder names you have to have quotes
 
-now that you are in the right folder we want to type python -m venv qfFree ... this will create a virtual env named qfFree
+now that you are in the right folder we want to type 
+```
+python -m venv qfFree
+```
+this will create a virtual env named qfFree
 
-next we want to type qfFree\Scripts\activate to activate the virtual env ... this will make sure anything we install is in the virtual env and not on our global python which is super extra important
+next we want to type 
+```
+qfFree\Scripts\activate```
+ to activate the virtual env ... this will make sure anything we install is in the virtual env and not on our global python which is super extra important
 
+if you are using 
 now we need to create a jupyter notebook kernel by typing this ipython kernel install --user --name=qfFree
 
 if you want to install the dev env then you have to type pip install -e then the location of your cloned repo like "C:\user\mystuff\coding\QuantFreedom" this will then install the backtester
@@ -70,6 +78,8 @@ Installation Problems
 
 !!! warning "Installation Problems"
     If you have any trouble or run into installation errors then what i have found is if i shutdown vscode then open it back up and then reactivate my virtual environment then pip install again it is able to make the full install
+
+
 ## Install TA-Lib
 To install ta lib you need to do the following
 
@@ -78,3 +88,9 @@ To install ta lib you need to do the following
 ![talib](../assets/talib.png)
 - Once you downloaded the file you need to change your folder path in the terminal by doing cd (download location of folder)
 - Once there type in pip install ( full file name of the talib wheel you downloaded)
+
+## isntalling pytables
+to install pytables you have to do the same thing as talib
+
+go to this website and download the version of python that you have https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytables
+for me i have version 3.10.10 right now so i download tables‑3.7.0‑cp310‑cp310‑win_amd64.whl then put it in your folder and change your directiroy in the terminal to the directory you put it in then do pip install tables‑3.7.0‑cp310‑cp310‑win_amd64.whl
