@@ -38,3 +38,9 @@ where instead of TA_Lib-0.4.24-cp310-cp310-win_amd64.whl - YOUR NAME OF DOWNLOAD
 8) Use format  '/YOUR_FOLDER_NAME_OF_VENV/QuantFreedom/tests/data/30min.csv' for CSV file
 
 9) To make sync all changes and push it to Github, open Source Control and then Fetch everything, then -> Remotes -> unfold Origin, right click on  Dev, than Merge Branch in to Current branch... 
+
+
+
+Adding in __init__.py any folders with my own functions 
+# Most important classes
+from quantfreedom.nax_qf import *
