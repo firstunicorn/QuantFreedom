@@ -1,0 +1,24 @@
+git push --set-upstream origin origin/dev
+git push
+
+git merge temporary   # Merge your current SELECTED branch with "temporary" branch
+git checkout origin/dev # Select "origin/dev" branch
+
+git checkout dev    # Select "dev" branch
+
+git commit # Commit your latest changes
+
+git status 
+
+git add tests
+git log    
+
+git switch -c origin/dev      # Forcely select "origin/dev" branch
+
+git stash    
+
+git branch -D dev # -Delete "dev" branch
+
+git checkout -b temporary # Create folder/directory whith a name "temporary"
+
+git reset  
