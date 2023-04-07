@@ -8,9 +8,9 @@ __version__ = _version
 
 
 # Most important classes
+from quantfreedom import *
 from quantfreedom.utils import *
 from quantfreedom.data import *
-from quantfreedom import *
 from quantfreedom.base import *
 from quantfreedom.enums import *
 from quantfreedom.nb import *
