@@ -83,39 +83,45 @@ markdown_extensions:
   - pymdownx.tilde
 
 plugins:
-  - mkdocstrings:
-      enable_inventory: true
-      handlers:
-        python:
-          paths: [../quantfreedom]
-          options:
-            show_source: true
-            line_length: 1
-            separate_signature: true
-            docstring_section_style: list
   - search
+  - gen-files:
+      scripts:
+        - gen_ref_pages.py
   - open-in-new-tab
   - autorefs
   - tags
+  - literate-nav:
+      nav_file: SUMMARY.md
   - minify:
       minify_html: true
+  - mkdocstrings:
+      enabled: !ENV [ENABLE_MKDOCSTRINGS, true]
+      enable_inventory: true
+      default_handler: python
+      handlers:
+        python:
+          paths: [..]
+          options:
+            show_source: false
+            line_length: 1
+            separate_signature: true
+            docstring_style: numpy
+            docstring_section_style: list
 
 nav:
   - Getting Started:
-      - index.md
-      - Installation: getting-started/install.md
-      - Release Notes: getting-started/releasenotes.md
-  - API:
-      - api/enums.md
-      - api/numba.md
-  - Tutorials:
-      - tutorials/index.md
-      - Numpy: 
-          - tutorials/numpy/broadcasting.md
-          - tutorials/numpy/logical.md
-          - tutorials/numpy/random.md
+    - index.md
+    - Installation: getting-started/install.md
+    - Release Notes: getting-started/releasenotes.md
+  - Coding Tutorials:
+      - coding_tus/index.md
+      - Numpy:
+          - coding_tus/numpy/broadcasting.md
+          - coding_tus/numpy/logical.md
+          - coding_tus/numpy/random.md
       - Pandas DataFrame:
-          - tutorials/pandas_dataframe/dataframe.md
+          - coding_tus/pandas_dataframe/dataframe.md
       - Pandas Functions:
-          - tutorials/pandas_functions/multiindex.md
-          - tutorials/pandas_functions/indexing.md
+          - coding_tus/pandas_functions/multiindex.md
+          - coding_tus/pandas_functions/indexing.md
+  - API: api/*

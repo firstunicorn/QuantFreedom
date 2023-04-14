@@ -4,9 +4,13 @@
 .mypy_cache
 .pytest_cache
 docs/site
+api/
 dist
 quantfreedom.egg-info
 numba_cache
+.todo
+thinking.txt
+.mustache
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

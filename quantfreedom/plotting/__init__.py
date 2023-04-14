@@ -1,1 +1,2 @@
-from quantfreedom.plotting.plotting_main import *
+from quantfreedom.plotting.strat_dashboard import *
+from quantfreedom.plotting.simple_plots import *
