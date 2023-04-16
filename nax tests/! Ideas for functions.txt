@@ -1,0 +1,13 @@
+it works, but is the user allowed to choose which part of price he can use? Like open prices, or high prices, or low prices. I think he should be allowed, but how he can do that?
+
+
+
+
+I have idea to add ability to set stop loses and take profits in two different ways:
+
+1) At high/low of the candle
+2) After X candle is passing
+3) Able to combine 2 of this methods
+4) Able to add this to cart product, so you can optimize those parameters
+
+and after that, I think there is almost nothing to add and we need to just backtest dozens of strategies ideas (I have like at least 40 ideas to tests) and maybe in process of backtesting strategies, there is will be more ideas how to improve backtester itself
