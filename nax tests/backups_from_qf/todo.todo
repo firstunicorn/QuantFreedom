@@ -1,0 +1,63 @@
+currently working on:
+    ☐ create simple plot that plots candles then adds a trace and creates a plot below of last data column
+    ☐ create simple plot that plots candle then adds scatter on top of it
+    ☐ update release notes
+    ☐ update features
+
+Documentation:
+    ☐ plotly helper functions
+      ☐ fill_candle_trace_trades
+      ☐ cerate_candle_trace_trades_list
+    ☐ learn how to make it so that there are blocks of text that look like the python file in markdown text
+     
+Videos to make:
+    ☐ utils helpers generat candles
+    ☐ backtest_df_only
+    ☐ data_download
+    ☐ strat_dashboard
+    ☐ get_candle_trace_data
+
+User Suggestions:
+    ☐ add sharpe ratio to dataframe results
+
+Next Verson:
+    ☐ create tabs in dashboard for multiple settings to look at
+    ☐ figure out how to share results like a screen shot of your dashboard
+    ☐ allow for there to be the ability to send the eval in the from talib so that it can do it all at once
+    ☐ create cart calc where the person can just copy paste their settings and get the number back as well as the number of cart times the number of ind settings ... then also include a number for total bars tested times number of order settings times number of ind settings make it a helper function because it will just print the results as the return
+    ☐ create base that returns entry settings using vbt indicator creation thing
+    ☐ once new window then make it so you can select from a max of 5 or 10 different reports
+
+Plotly Dash:
+    ☐ make it so in the ind dict you only send the entries once
+    ☐ make it so that once you take profit or get stopped out the icon shows up because right now the tp isn't showing up
+
+Python course:
+    ☐ watch some courses and make simple 1 or 2 min vids on the topic
+    ☐ find tips and tricks videos and make 1 or 2 min simple videos
+
+Numba:
+    ☐ see if you can repurpose cart array when using numba for df cart array
+    ☐ Does disabling cache=True in your application change anything?
+
+TODOs:
+    ☐ there seems no point of having the final array in simulate 6 because all we need is or so we can plot ... the finaly arrray is the same info from the df array that we already made so doesn't seem like there is a point.
+    ☐ make a grpah that takes the to the upside score and the gains percent and sets those as x and y values and graphs them as scatter plots so i cna see which one has the best of both worlds ... this would be for the DF
+    ☐ make replay_trade_plotter work with order records
+    ☐ make dl bar more accurate by doing math to figure out how many candles are within the amount of time we are trying to download
+    ☐ make it so leverage goes to 100 when sl or tsl moves past entry and liq price is maxed out
+    ☐ figure out a way to filter the true and false for stops and trails
+    ☐ allow for different fees for different coins
+    ☐ create a slippage function thing that is a random number gen between something and something and then let the user to set a random slippage percent when the random num gets hit
+    ☐ after you get your true and false entry and exit signals allow them to create an array of slippage associated with 
+    ☐ add back in slippage that auto adds slippage at a small slippage to all trades
+    ☐ slipage should be plus minus
+
+Other Users Needed:
+    ☐ check on seeing if the deletion of numba cache works on other peoples comps
+
+Ask Other Users ?:
+    ☐ add the ability to put user defined sl tp tsl prices
+
+Would Be Nice:
+    ☐ send pct change of position in order result when decreasing or increaseing position size
