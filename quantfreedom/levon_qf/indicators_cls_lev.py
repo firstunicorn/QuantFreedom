@@ -2,8 +2,7 @@ from talib import func_name
 
 import quantfreedom
 from quantfreedom._typing import pdFrame, Union, Array1d
-from quantfreedom.levon_qf.eval_lev import _is_below
-from quantfreedom.evaluators.evaluators import combine_evals
+from quantfreedom.levon_qf.eval_lev import _is_below, combine_evals
 
 
 class Indicator:
