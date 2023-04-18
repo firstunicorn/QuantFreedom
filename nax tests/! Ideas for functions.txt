@@ -11,3 +11,8 @@ I have idea to add ability to set stop loses and take profits in two different w
 4) Able to add this to cart product, so you can optimize those parameters
 
 and after that, I think there is almost nothing to add and we need to just backtest dozens of strategies ideas (I have like at least 40 ideas to tests) and maybe in process of backtesting strategies, there is will be more ideas how to improve backtester itself
+
+
+
+make "mini" plotly functions, like in VBT, where we can plot easily our signals and also plot our strategies performance;
+and also we can give parameters like how much charts we can want to plot, if we have multi pair dataframe and
