@@ -16,3 +16,10 @@ and after that, I think there is almost nothing to add and we need to just backt
 
 make "mini" plotly functions, like in VBT, where we can plot easily our signals and also plot our strategies performance;
 and also we can give parameters like how much charts we can want to plot, if we have multi pair dataframe and
+
+How can we check on the plot with the multi-pair/multi-symbol dataframe if we've done everything right? I mean, we still have a chance of error, even if we checked it before on Plotly with one symbol... Can we somehow plot charts for all symbols?
+
+I had an idea previously: make "mini" plotly functions, like in VBT, where we can easily plot our signals and also plot our strategies' performance;
+and also we can give parameters like how many charts we want to plot (it will take like the top 3 or top 5 charts by default) if we have a multi-pair dataframe, and also, in different arguments, we can pass exactly which pairs we want.
+
+This will be so useful for the user and for us as well, to check if everything is sane and intact.
