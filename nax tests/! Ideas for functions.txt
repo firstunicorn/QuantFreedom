@@ -6,12 +6,19 @@ it works, but is the user allowed to choose which part of price he can use? Like
 I have idea to add ability to set stop loses and take profits in two different ways:
 
 1) At high/low of the candle
-2) After X candle is passing
-3) Able to combine 2 of this methods
-4) Able to add this to cart product, so you can optimize those parameters
+2) At extremums [called also extreme value]
+3) After X candle is passing
+4) Able to combine 3 of this methods
+5) Able to add this to cart product, so you can optimize those parameters
 
 and after that, I think there is almost nothing to add and we need to just backtest dozens of strategies ideas (I have like at least 40 ideas to tests) and maybe in process of backtesting strategies, there is will be more ideas how to improve backtester itself
+#Can you suggest 2 thing?
+"""
+1. Haw can I add my evaluator to Evaluators.py?
 
+2. How can I add stop losses/take profit functions?
+Do I have just start with signal function, not stop loss at all? And then convert this signal function to stop loss somehow...
+"""
 
 
 make "mini" plotly functions, like in VBT, where we can plot easily our signals and also plot our strategies performance;
@@ -20,6 +27,14 @@ and also we can give parameters like how much charts we can want to plot, if we 
 How can we check on the plot with the multi-pair/multi-symbol dataframe if we've done everything right? I mean, we still have a chance of error, even if we checked it before on Plotly with one symbol... Can we somehow plot charts for all symbols?
 
 I had an idea previously: make "mini" plotly functions, like in VBT, where we can easily plot our signals and also plot our strategies' performance;
-and also we can give parameters like how many charts we want to plot (it will take like the top 3 or top 5 charts by default) if we have a multi-pair dataframe, and also, in different arguments, we can pass exactly which pairs we want.
+and also we can give parameters like how many charts we want to plot (it will take like the top 3 or top 5 charts by default) if we have a multi-pair dataframe, and also, in another argument, we can pass exactly which pairs we want.
 
-This will be so useful for the user and for us as well, to check if everything is sane and intact.
+This will be so useful for the user and for us as well, to check if everything is sane and intact. 
+
+I mean plot not separately one by one, but entire dataframe somehow... because if we will do it one by one, we still have little, but chance that there is error in some step, because we have this transformation inside of our function:          close_cols = price_data.loc[:, price_data.columns.get_level_values(1) == candle_ohlc] and some other transformations.
+
+and I'm not sure if we can fit it to Plotly and/or test this just without braking down it to just one symbol (and it will be another dataframe and there we will have still chance of error).
+
+UPD: while I write it, I got one idea... 
+
+I mean, if we just somehow transform our dataframe to fit Plotly, in that transformation process we have a chance of making a mistake, and Plotly gives us wrong results, and we even don't see that if it's wrong because of that... But I have one idea, which I will try. Man, hope I'm not overcomplicated it, lol)
