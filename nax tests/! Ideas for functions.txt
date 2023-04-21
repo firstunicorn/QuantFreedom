@@ -5,7 +5,7 @@ it works, but is the user allowed to choose which part of price he can use? Like
 
 I have idea to add ability to set stop loses and take profits in two different ways:
 
-1) At high/low of the candle
+1) At high/low of the x last and/or current candle
 2) At extremums [called also extreme value]
 3) After X candle is passing
 4) Able to combine 3 of this methods
@@ -38,3 +38,13 @@ and I'm not sure if we can fit it to Plotly and/or test this just without brakin
 UPD: while I write it, I got one idea... 
 
 I mean, if we just somehow transform our dataframe to fit Plotly, in that transformation process we have a chance of making a mistake, and Plotly gives us wrong results, and we even don't see that if it's wrong because of that... But I have one idea, which I will try. Man, hope I'm not overcomplicated it, lol)
+
+
+
+Strategy library
+
+
+Builder for strategies live trader
+
+
+GUI strategy builder
