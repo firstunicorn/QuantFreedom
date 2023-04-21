@@ -1,6 +1,14 @@
-it works, but is the user allowed to choose which part of price he can use? Like open prices, or high prices, or low prices. I think he should be allowed, but how he can do that?
+Can you suggest 2 thing?
 
+1. Haw can I add my evaluator to Evaluators.py?
 
+2. How can I add stop losses/take profit functions?
+Do I have just start with signal function, not stop loss at all? And then convert this signal function to stop loss somehow...
+
+Also, you said there is be major code uptates soon... Do I even need to do Evaluators.py right now or better later?
+Or just working on stop losses, because I think they are purely algorithms without any structure or architecture, so I can just add them to the code base/QuantFreedom structure later, right?
+Or maybe better just work on my live trader and then add stop losses to it?
+What would you have done if you were in my place?
 
 
 I have idea to add ability to set stop loses and take profits in two different ways:
