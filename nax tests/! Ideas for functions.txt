@@ -8,10 +8,10 @@ Do I have just start with signal function, not stop loss at all? And then conver
 Also, you said there is be major code uptates soon... Do I even need to do Evaluators.py right now or better later?
 Or just working on stop losses, because I think they are purely algorithms without any structure or architecture, so I can just add them to the code base/QuantFreedom structure later, right?
 Or maybe better just work on my live trader and then add stop losses to it?
-What would you have done if you were in my place?
+What would you have done if you were in my place? What should I do first?
 
 
-I have idea to add ability to set stop loses and take profits in two different ways:
+I have idea to add ability to set stop loses and take profits in few different ways:
 
 1) At high/low of the x last and/or current candle
 2) At extremums [called also extreme value]
