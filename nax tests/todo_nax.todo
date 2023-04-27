@@ -1,0 +1,25 @@
+Trading bot:
+    ☐ Add TimeScale DB
+    ☐ Add trades history
+    ☐ Add ability to look/show current pending orders
+    ☐ Add ability to cancel pending orders
+    
+    ☐ Add ability to show current balance
+    
+    
+Trading bot logic itselt:
+    ☐ Double check before orders submitting
+
+Frontend/Dashboard/Bot Control Panel:
+    ☐ Make basic dashboard for bot control[status, balance, current orders, etc]
+    ☐ Add ability to start/stop bot
+    ☐ Add ability to change bot settings
+    ☐ Add ability to change bot logic
+
+Security:
+    ☐ Make somehow works with hashes, not API keys directly, so hired developers can work on the server side without knowing the API key.
+    ☐ Configure API key to be used only from specific IP addresses.
+
+Server security:
+    ☐ Install Fail2Ban
+    ☐ Change SSH port

@@ -1,0 +1,55 @@
+
+Trading bot:
+    ☐ Add ability to look/show current pending orders
+    ☐ Add ability to cancel pending orders
+    ☐ Add ability to cancel all pending orders
+    ☐ Add ability to cancel all pending orders for specific pair
+    ☐ Add ability to cancel all pending orders for specific pair and side (buy/sell)
+    ☐ Add ability to cancel all pending orders for specific pair and side (buy/sell) and price
+    ☐ Add ability to cancel all pending orders for specific pair and side (buy/sell) and price and amount
+    ☐ Add ability to cancel all pending orders for specific pair and side (buy/sell) and price and amount and type (limit/market)
+    ☐ Add ability to cancel all pending orders for specific pair and side (buy/sell) and price and amount and type (limit/market) and time
+    ☐ Add ability to cancel all pending orders for specific pair and side (buy/sell) and price and amount and type (limit/market) and time and flags
+    ☐ Add ability to cancel all pending orders for specific pair and side (buy/sell) and price and amount and type (limit/market) and time and flags and other
+    
+
+
+Security:
+    ☐ Make somehow works with hashes, not API keys directly, so hired developers can work on the server side without knowing the API key.
+    ☐ Configure API key to be used only from specific IP addresses.
+
+Server security:
+    ☐ Install Fail2Ban
+    ☐ Install ClamAV
+    ☐ Install rkhunter
+    ☐ Install chkrootkit
+    ☐ Install logwatch
+    ☐ Install logcheck
+    ☐ Install logrotate
+    # Server hardening
+    ☐ Install and configure firewall
+    ☐ Install and configure intrusion detection system
+    ☐ Install and configure intrusion prevention system
+    ☐ Install and configure brute force protection
+    ☐ Install and configure rootkit detection
+    ☐ Install and configure log monitoring
+    ☐ Install and configure log rotation
+    ☐ Install and configure log analysis
+    ☐ Install and configure log alerting
+    ☐ Install and configure log archiving
+    ☐ Install and configure log backup
+    ☐ Install and configure log retention
+    ☐ Install and configure log encryption
+    ☐ Install and configure log integrity
+    ☐ Install and configure log anonymization
+    ☐ Install and configure log masking
+    ☐ Install and configure log obfuscation
+    ☐ Install and configure log deletion
+    
+    ☐ Disable root login
+    ☐ Disable password authentication
+    ☐ Install and configure UFW
+    ☐ Install and configure ClamAV
+    ☐ Install and configure RKHunter
+
+    https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus
