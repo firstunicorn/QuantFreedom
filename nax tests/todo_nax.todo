@@ -2,15 +2,16 @@ Trading bot:
     ☐ Add TimeScale DB
     ☐ Add trades history
     ☐ Add ability to look/show current pending orders
-    ☐ Add ability to cancel pending orders
+    ☐ Add feature to cancel pending orders
     
-    ☐ Add ability to show current balance
+    ☐ Add ability to show current balance[and maybe record it to trade history?]
     
-    
+
 Trading bot logic itselt:
     ☐ Double check before orders submitting
+    ☐ Instead of using local "switcher" variable "open_position = False/True" - fetch real data from exchange API
 
-Frontend/Dashboard/Bot Control Panel:
+Frontend/Dashboard/Bot Control Panel with Flask:
     ☐ Make basic dashboard for bot control[status, balance, current orders, etc]
     ☐ Add ability to start/stop bot
     ☐ Add ability to change bot settings
@@ -21,5 +22,28 @@ Security:
     ☐ Configure API key to be used only from specific IP addresses.
 
 Server security:
-    ☐ Install Fail2Ban
+    ☐ Install Fail2Ban # Configure Fail2Ban with bash script # https://webdock.io/en/docs/how-guides/security-guides/how-configure-fail2ban-common-services # https://www.linode.com/docs/guides/how-to-use-fail2ban-for-ssh-brute-force-protection/ # Monitoring With Fail2Ban-Client # fail2ban vs # CroudSec seems to be a decent replacement for fail2ban
     ☐ Change SSH port
+
+Coding Productivity:
+    ☐ SSH++ by Tablet Labs
+
+
+
+chmod 700 /path/to/virtual/environment/files/*
+chmod 600 /path/to/virtual/environment/
+
+sudo chmod 700 /home/ubuntu/bot-diver/*
+sudo chmod 600 /home/ubuntu/bot-diver/
+
+ls -l /path/to/virtual/environment/files/
+ls -l /home/ubuntu/bot-diver/
+
+sudo chown -R ubuntu:ubuntu /home/ubuntu/bot-diver
+sudo chmod -R 700 /home/ubuntu/bot-diver
+
+
+
+
+
+*/2 * * * * /home/ubuntu/bot-diver/divervenv/bin/python3 /home/ubuntu/bot-diver/divervenv/binance-no-sockets.py >> /home/ubuntu/bot-diver/divervenv/logs/prints-outputs.log 2>&1

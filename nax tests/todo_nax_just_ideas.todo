@@ -52,4 +52,122 @@ Server security:
     ☐ Install and configure ClamAV
     ☐ Install and configure RKHunter
 
+    I'm new to both crowdsec and fail2ban. I run all of my containers through proxmox, including my opnsense firewall
+
+    selinux vs apparmor
+    AppArmor works by granting access first, then applying restrictions. SELinux, however, restricts access to all applications by default and grants access only to users that present the proper certifications.
+
     https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus
+
+    https://www.digitalocean.com/community/tutorials/automating-initial-server-setup-with-ubuntu-18-04
+
+
+    # Chapter 15, Security
+
+# Fail2Ban
+
+sudo apt install fail2ban
+
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+
+sudo sed -i 's/#ignoreip = 127.0.0.1/8 ::1/ignoreip = 127.0.0.1/8 ::1 192.168.1.0/24/' /etc/fail2ban/jail.local
+
+sudo sed -i 's/bantime = 10m/bantime = 10m/' /etc/fail2ban/jail.local
+
+sudo sed -i 's/maxretry = 5/maxretry = 7/' /etc/fail2ban/jail.local
+
+sudo sed -i 's/…/port = ssh/' /etc/fail2ban/jail.local
+
+sudo sed -i 's/…/enabled = true/' /etc/fail2ban/jail.local
+
+
+https://gist.github.com/hannesbe/967bfe743aa777fec88b
+
+
+
+Coding Productivity:
+    ☐ PyCharm
+    ☐ VSCode
+    ☐ GitKraken
+    ☐ GitLab
+    ☐ GitHub
+    ☐ GitLab CI/CD
+    ☐ Docker
+    ☐ Docker Compose
+    ☐ Docker Swarm
+    ☐ Kubernetes
+    ☐ Ansible
+    ☐ Terraform
+    ☐ Jenkins
+    ☐ Grafana
+    ☐ Prometheus
+    ☐ Sentry
+    ☐ Sentry.io
+    ☐ Sentry.io for Python
+    ☐ Sentry.io for JavaScript
+    ☐ Sentry.io for React
+    ☐ Sentry.io for Node.js
+    ☐ Sentry.io for Django
+    ☐ Sentry.io for Flask
+    ☐ Sentry.io for PHP
+    ☐ Sentry.io for Laravel
+    ☐ Sentry.io for Ruby
+    ☐ Sentry.io for Rails
+    ☐ Sentry.io for Go
+    ☐ Sentry.io for Java
+    ☐ Sentry.io for Android
+    ☐ Sentry.io for iOS
+    ☐ Sentry.io for Swift
+    ☐ Sentry.io for C#
+    ☐ Sentry.io for .NET
+    ☐ Sentry.io for C++
+    ☐ Sentry.io for Unity
+    ☐ Sentry.io for Electron
+    ☐ Sentry.io for Vue.js
+    ☐ Sentry.io for Angular
+    ☐ Sentry.io for Ember
+    ☐ Sentry.io for Cordova
+    ☐ Sentry.io for Ionic
+    ☐ Sentry.io for Flutter
+    ☐ Sentry.io for React Native
+    ☐ Sentry.io for Xamarin
+    ☐ Sentry.io for NativeScript
+    ☐ Sentry.io for Expo
+    ☐ Sentry.io for Next.js
+    ☐ Sentry.io for Nuxt.js
+    ☐ Sentry.io for Gatsby
+    ☐ Sentry.io for Hugo
+    ☐ Sentry.io for Jekyll
+    ☐ Sentry.io for Hugo
+
+
+
+
+
+chmod 700 /path/to/virtual/environment/files/*
+chmod 600 /path/to/virtual/environment/
+
+sudo chmod 700 /home/ubuntu/bot-diver/*
+sudo chmod 600 /home/ubuntu/bot-diver/
+
+ls -l /path/to/virtual/environment/files/
+ls -l /home/ubuntu/bot-diver/
+
+sudo chmod 750 /home/ubuntu/bot-diver/divervenv
+
+sudo chown -R ubuntu:ubuntu /home/ubuntu/bot-diver
+sudo chmod -R 777 /home/ubuntu/bot-diver/divervenv
+
+chmod 750 /path/to/virtual/environment
+sudo chmod 640 /path/to/virtual/environment/bin/activate
+
+/bot-diver/divervenv/
+source bot-diver/divervenv/bin/activate
+OR
+cd bot-diver/divervenv/bin
+source activate
+
+python binance-no-sockets.py > output.log 2>&1
+
+
+/home/ubuntu/bot-diver/divervenv/bin/python3 /home/ubuntu/bot-diver/divervenv/binance-no-sockets.py > output2.log 2>&1
