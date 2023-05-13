@@ -1,4 +1,5 @@
 Trading bot:
+    ☐ Happy birthday!
     ☐ Add TimeScale DB
     ☐ Add trades history
     ☐ Add ability to look/show current pending orders
@@ -42,8 +43,46 @@ ls -l /home/ubuntu/bot-diver/
 sudo chown -R ubuntu:ubuntu /home/ubuntu/bot-diver
 sudo chmod -R 700 /home/ubuntu/bot-diver
 
+RIGHT CHMODS:
+    If you want to elevate your python script to sudo, try this chmod 740 my_script.py I am not a linux user, so I may be using the wrong chmod number
+    
+    700 for log folders (not less, because it will not be able to write to the file) (tested, works)
+    664 for log files (not less, because it will not be able to write to the file) (tested, works)
+    500 for secret folder (tested, works) (not less obviously, because it will not be able to read the file)
+
+    750 for secret files (tested, works... maybe can be 640 or 600 or less
+    500 for VENV folders (maybe 700)
+    600 for VENV files (maybe 700)
+    750 for .py files (tested, works... maybe can be 640 or 600 or less, like 500)
+
+    sudo find /home/ubuntu/bot-diver/ -type d -exec chmod 600 {} \;
+    ubuntu@vps-bbaa3c1d:~$ chmod -R 700 /home/ubuntu/bot-diver/
+    ubuntu@vps-bbaa3c1d:~$ chmod -R 700 /home/ubuntu/bot-diver/divervenv
 
 
+OLD CHMODS:
+    
+    chmod -R 750 /home/ubuntu/bot-diver/        !!!!!!!!!!  UPDATE: 664 IS THE BEST FOR LOG FILES
+    chmod 500 filename.py
+    chmod 550 filename.py - IF NOT WORKING
+    chmod 700 /path/to/virtual/environment/files/*
+    chmod 600 /path/to/virtual/environment/
+    chmod 600 /path/to/logfile.log
+    chmod 700 /path/to/log/folder/
+    chmod 750 /path/to/virtual/environment
+    chmod 640 /path/to/virtual/environment/bin/activate
+
+
+
+
+    chmod -R 750 /home/ubuntu/bot-diver
+    chmod -R 750 /home/ubuntu/bot-diver/divervenv
+    chmod -R 600 /home/ubuntu/bot-diver/divervenv
+    chmod 700 /home/ubuntu/bot-diver/divervenv/*
+
+
+
+    chmod 640 /home/ubuntu/bot-diver/divervenv/bin/activate
 
 
 */2 * * * * /home/ubuntu/bot-diver/divervenv/bin/python3 /home/ubuntu/bot-diver/divervenv/binance-no-sockets.py >> /home/ubuntu/bot-diver/divervenv/logs/prints-outputs.log 2>&1

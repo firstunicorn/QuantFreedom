@@ -28,7 +28,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy_utils import database_exists, create_database
 
 import logging
-logging.basicConfig(filename='/home/ubuntu/bot-diver/divervenv/logs/logfile.log', level=logging.DEBUG, filemode='a')
+logging.basicConfig(filename='.\logs\debug.log', level=logging.DEBUG, filemode='a')
 
 
 # API keys:
@@ -126,7 +126,7 @@ def trade(ticker, lotsize, open_position = False):
       return
   time.sleep(1)  # sleep 1 seconds
   
-trade('BTCUSDT', 0.001)
+trade(symb, 0.001)
 
 # %%
 # info = client.get_account()
